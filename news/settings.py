@@ -31,9 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-DEBUG = False
-
-ALLOWED_HOSTS = ["news-setes.uz", "www.news-setes.uz", '127.0.0.1']
+ALLOWED_HOSTS = ["https://yangiliklar-website-production.up.railway.app/", "www.yangiliklar-website-production.up.railway.app/", '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -161,8 +159,8 @@ STATICFILES_FINDERS = [
 
 import os
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/setes/news-setes.uz/django/staticfiles'
-STATICFILES_DIRS = ('/home/setes/news-setes.uz/django/static', )
+STATIC_ROOT = 'https://yangiliklar-website-production.up.railway.app/staticfiles'
+STATICFILES_DIRS = ('https://yangiliklar-website-production.up.railway.app/static', )
 
 # Bu sozlamalar local uchun 
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
